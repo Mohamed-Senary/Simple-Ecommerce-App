@@ -22,6 +22,15 @@ export default function productDetails (){
             <div className="row">
                 <div className="col-md-6 col-12">
                     <img className="img-thumbnail" src={product?.images[0]} alt="" />
+                    <div className="row my-2">
+                        {
+                            product?.images.map((image , idx)=>{
+                                return (
+                                    <img key={idx} className="col-3 img-thumbnail m-auto" src={image}/>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
                 <div className="col-md-6 p-5 col-12">
                     <h1>{product?.title}</h1>
