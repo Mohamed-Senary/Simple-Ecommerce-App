@@ -1,12 +1,19 @@
-# React + Vite
+# Products App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that displays product details fetched from an external API. It features client-side routing, state management with Redux, and a shopping cart.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetch and display products from a public API
+- Product detail pages with images, description, and stock info
+- Add products to a Redux-managed shopping cart with quantity control
+- Responsive navigation bar with cart item count
+- Client-side routing with React Router
 
-## Expanding the ESLint configuration
+## Technologies & Concepts Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** for building the user interface
+- **React Router** for handling navigation and dynamic routes
+- **Redux** for managing global state (shopping cart)
+- **API calls** using `fetch` and React hooks (`useEffect`, `useState`)
+- **Bootstrap 5** for responsive styling and layout
