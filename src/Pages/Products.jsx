@@ -49,9 +49,10 @@ export default function Products (){
                     key={idx}
                     onClick={()=>setFilter(category)}>
                         {category}
-                    </li>)
-                    )
+                    </li>))
+                    
                 }
+                {filter && <li onClick={()=>setFilter("")} className="btn badge rounded-pill bg-danger">Clear Filter</li>}
             </ul>
             <hr/>
             <div className="row row-cols-1 row-cols-md-3 g-4">
